@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Olivier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Olivier - Services Informatiques</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Contactez-moi</h2>
+    <p>Remplissez le formulaire ci-dessous pour demander un devis ou me poser une question.</p>
+
+    <form action="https://formspree.io/f/mblqljqk" method="POST">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="_replyto" required>
+
+        <label for="phone">Téléphone (optionnel) :</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="service">Type de service :</label>
+        <select id="service" name="service" required>
+            <option value="">--Sélectionnez--</option>
+            <option value="depannage">Dépannage informatique</option>
+            <option value="site_web">Création site web</option>
+        </select>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="submit" value="Envoyer">
+    </form>
+</div>
+
+<footer>
+    &copy; 2025 Olivier - Tous droits réservés
+</footer>
+
+</body>
+</html>
