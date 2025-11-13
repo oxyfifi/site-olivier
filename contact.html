@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Olivier Informatique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Contactez-moi</h1>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Services</a>
+    <a href="tarifs.html">Tarifs</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="contact">
+  <img src="images/contact.png" alt="Contact" class="contact-img">
+  <p>Remplissez le formulaire pour me dire quel type de service vous souhaitez. Je vous répondrai rapidement.</p>
+
+  <form action="https://formspree.io/f/mnqvkwgy" method="POST">
+    <label for="name">Nom :</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">Email :</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="service">Type de service :</label>
+    <select name="service" id="service" required>
+      <option value="Dépannage informatique">Dépannage informatique</option>
+      <option value="Création site web">Création de site web</option>
+    </select>
+
+    <label for="message">Message :</label>
+    <textarea name="message" id="message" rows="5" required></textarea>
+
+    <button type="submit" class="btn">Envoyer</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Olivier Cesari | Dépannage & Création web en Corse</p>
+</footer>
+
+</body>
+</html>
