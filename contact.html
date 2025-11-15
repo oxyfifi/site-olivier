@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact - Olivier Informatique</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
-  <h1>Contactez-moi</h1>
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="services.html">Services</a>
-    <a href="tarifs.html">Tarifs</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="header-inner">
+    <div class="site-title">
+      <img src="images/logo.png" alt="logo" onerror="this.style.display='none'">
+      <h1>Olivier Informatique</h1>
+    </div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="formations.html">Formations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<section class="contact">
-  <img src="images/contact.png" alt="Contact" class="contact-img">
-  <p>Remplissez le formulaire pour me dire quel type de service vous souhaitez. Je vous répondrai rapidement.</p>
+<main class="container">
+  <h2 class="section-title">Contact & Demande de devis</h2>
 
-  <form action="https://formspree.io/f/mnqvkwgy" method="POST">
-    <label for="name">Nom :</label>
-    <input type="text" name="name" id="name" required>
+  <div class="form-card">
+    <form action="https://formspree.io/f/mblqljqk" method="POST">
+      <label for="name">Nom / Prénom</label>
+      <input id="name" name="name" type="text" required>
 
-    <label for="email">Email :</label>
-    <input type="email" name="email" id="email" required>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
 
-    <label for="service">Type de service :</label>
-    <select name="service" id="service" required>
-      <option value="Dépannage informatique">Dépannage informatique</option>
-      <option value="Création site web">Création de site web</option>
-    </select>
+      <label for="phone">Téléphone (optionnel)</label>
+      <input id="phone" name="phone" type="text">
 
-    <label for="message">Message :</label>
-    <textarea name="message" id="message" rows="5" required></textarea>
+      <label for="service">Type de service / formation</label>
+      <select id="service" name="service" required>
+        <option value="">-- Choisir --</option>
+        <option value="depannage">Dépannage informatique</option>
+        <option value="site">Création site web</option>
+        <option value="formation-hygiene">Formation : Hygiène numérique</option>
+        <option value="formation-cyber">Formation : Cybersécurité</option>
+        <option value="devis-entreprise">Devis entreprise</option>
+      </select>
 
-    <button type="submit" class="btn">Envoyer</button>
-  </form>
-</section>
+      <label for="message">Détails / message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+
+</main>
 
 <footer>
-  <p>© 2025 Olivier Cesari | Dépannage & Création web en Corse</p>
+  <p>© 2025 Olivier Cesari — Dépannage & Formations numériques en Corse</p>
 </footer>
-
 </body>
 </html>

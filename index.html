@@ -1,32 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Olivier Informatique - Dépannage & Création de sites</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Olivier - Informatique & Formations (Corse)</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>Olivier Informatique</h1>
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="services.html">Services</a>
-    <a href="tarifs.html">Tarifs</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="header-inner">
+    <div class="site-title">
+      <img src="images/logo.png" alt="logo" onerror="this.style.display='none'">
+      <h1>Olivier Informatique</h1>
+    </div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="formations.html">Formations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<section id="hero">
-  <img src="images/hero.jpg" alt="Bureau moderne" class="hero-image">
-  <h2>Réparation PC & Création de sites web en Corse</h2>
-  <p>Étudiant en BTS SIO, je vous aide à résoudre vos problèmes informatiques et à créer votre présence en ligne.</p>
-  <a href="services.html" class="btn">Découvrir mes services</a>
-</section>
+<main class="container">
+  <section class="hero">
+    <div class="hero-card">
+      <h2>Réparation PC & Création de sites — en Corse</h2>
+      <p>Étudiant BTS SIO, je propose des services rapides et des formations simples pour protéger vos données.</p>
+      <a href="contact.html" class="cta">Demander un devis</a>
+      <a href="formations.html" class="secondary">Voir les formations</a>
+    </div>
+    <img class="hero-image" src="images/hero.jpg" alt="bureau informatique">
+  </section>
+
+  <section>
+    <h3 class="section-title">Ce que je propose</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="images/pc-repair.png" alt="dépannage">
+        <h3>Dépannage informatique</h3>
+        <p>Réparations, optimisation, suppression de virus, configuration réseau.</p>
+        <a class="btn" href="services.html">Détails</a>
+      </div>
+
+      <div class="card">
+        <img src="images/web-creation.png" alt="site web">
+        <h3>Création de sites</h3>
+        <p>Sites vitrines pour artisans et petites entreprises — simples à gérer.</p>
+        <a class="btn" href="services.html">Détails</a>
+      </div>
+
+      <div class="card">
+        <img src="images/formation.png" alt="formations">
+        <h3>Formations & Sensibilisation</h3>
+        <p>Ateliers hygiène numérique, formation anti-phishing et sécurité basique.</p>
+        <a class="btn" href="formations.html">Voir formations</a>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer>
-  <p>© 2025 Olivier Cesari | Dépannage & Création web en Corse</p>
+  <p>© 2025 Olivier Cesari — Dépannage & Formations numériques en Corse</p>
 </footer>
 
 </body>

@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mes Services - Olivier Informatique</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services - Olivier Informatique</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- ======== HEADER ======== -->
-  <header>
-    <h1>Mes Services</h1>
+<header>
+  <div class="header-inner">
+    <div class="site-title">
+      <img src="images/logo.png" alt="logo" onerror="this.style.display='none'">
+      <h1>Olivier Informatique</h1>
+    </div>
     <nav>
       <a href="index.html">Accueil</a>
       <a href="services.html">Services</a>
       <a href="tarifs.html">Tarifs</a>
+      <a href="formations.html">Formations</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <!-- ======== SECTION DÉPANNAGE ======== -->
-  <section class="service">
-    <img src="images/pc-repair.png" alt="Réparation ordinateur" class="service-img">
-    <h2>Dépannage informatique</h2>
-    <p>
-      Réparation d’ordinateurs, suppression de virus, réinstallation de Windows ou macOS, 
-      configuration de logiciels, récupération de données et bien plus encore.
-    </p>
-    <a href="tarifs.html" class="btn">Voir les tarifs</a>
-  </section>
+<main class="container">
+  <h2 class="section-title">Mes services</h2>
 
-  <!-- ======== SECTION CRÉATION DE SITES ======== -->
-  <section class="service">
-    <img src="images/web-creation.png" alt="Création de site web" class="service-img">
-    <h2>Création de sites web</h2>
-    <p>
-      Conception de sites vitrines, portfolios, pages professionnelles ou personnelles.  
-      Design moderne, responsive, et hébergement pris en charge. 
-      Idéal pour les artisans, étudiants ou petites entreprises.
-    </p>
-    <a href="tarifs.html" class="btn">Voir les tarifs</a>
-  </section>
+  <div class="grid">
+    <div class="card">
+      <img src="images/pc-repair.png" alt="Réparation">
+      <h3>Dépannage Informatique</h3>
+      <p>Installation, nettoyage, récupération de données, configuration réseau.</p>
+      <a class="btn" href="tarifs.html">Voir les tarifs</a>
+    </div>
 
-  <!-- ======== FOOTER ======== -->
-  <footer>
-    <p>© 2025 Olivier Cesari - Tous droits réservés</p>
-  </footer>
+    <div class="card">
+      <img src="images/web-creation.png" alt="Création site">
+      <h3>Création de sites web</h3>
+      <p>Sites vitrines responsive, hébergement, prises en main.</p>
+      <a class="btn" href="tarifs.html">Voir les tarifs</a>
+    </div>
 
+    <div class="card">
+      <img src="images/formation.png" alt="Formations">
+      <h3>Formations & Ateliers</h3>
+      <p>Hygiène numérique, anti-phishing et sensibilisation pour PME.</p>
+      <a class="btn" href="formations.html">Voir les formations</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2025 Olivier Cesari — Dépannage & Formations numériques en Corse</p>
+</footer>
 </body>
 </html>
