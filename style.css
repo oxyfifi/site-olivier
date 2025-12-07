@@ -1,13 +1,22 @@
 :root{
   --primary:#7b2cbf;
   --dark:#1a1b41;
-  --accent:#cdb4db; 
-  --muted:#f5f5f5; 
+  --accent:#cdb4db;
+  --muted:#f5f5f5;
   --text:#222;
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%}
+/* Réglages généraux */
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html,body{
+  height:100%;
+}
+
 body{
   font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
   background:var(--muted);
@@ -17,6 +26,7 @@ body{
   line-height:1.5;
 }
 
+/* Header */
 header{
   background: linear-gradient(90deg, var(--dark), rgba(26,27,65,0.95));
   color:#fff;
@@ -26,6 +36,7 @@ header{
   top:0;
   z-index:100;
 }
+
 .header-inner{
   max-width:1100px;
   margin:0 auto;
@@ -34,30 +45,42 @@ header{
   justify-content:space-between;
   gap:16px;
 }
+
 .site-title{
   display:flex;
   align-items:center;
   gap:12px;
 }
-.site-title img{height:42px;}
+
+.site-title img{
+  height:42px;
+}
+
 .site-title h1{
   font-size:1.2rem;
   letter-spacing:0.4px;
 }
+
+/* Navigation */
 nav a{
   color:rgba(255,255,255,0.95);
   text-decoration:none;
   margin-left:18px;
   font-weight:600;
 }
-nav a:hover{opacity:0.9}
 
+nav a:hover{
+  opacity:0.9;
+}
+
+/* Conteneur principal */
 .container{
   max-width:1100px;
   margin:30px auto;
   padding:0 18px;
 }
 
+/* Hero */
 .hero{
   display:grid;
   grid-template-columns:1fr 480px;
@@ -65,14 +88,25 @@ nav a:hover{opacity:0.9}
   align-items:center;
   margin-bottom:28px;
 }
+
 .hero-card{
   background:#fff;
   padding:30px;
   border-radius:14px;
   box-shadow:0 10px 30px rgba(26,27,65,0.06);
 }
-.hero h2{color:var(--dark); font-size:1.8rem; margin-bottom:8px;}
-.hero p{color:#444; margin-bottom:18px;}
+
+.hero h2{
+  color:var(--dark);
+  font-size:1.8rem;
+  margin-bottom:8px;
+}
+
+.hero p{
+  color:#444;
+  margin-bottom:18px;
+}
+
 .hero .cta{
   display:inline-block;
   background:var(--primary);
@@ -83,6 +117,7 @@ nav a:hover{opacity:0.9}
   font-weight:700;
   box-shadow: 0 8px 18px rgba(123,44,191,0.18);
 }
+
 .hero .secondary{
   display:inline-block;
   margin-left:12px;
@@ -101,18 +136,21 @@ nav a:hover{opacity:0.9}
   box-shadow:0 10px 30px rgba(26,27,65,0.08);
 }
 
+/* Titres de section */
 .section-title{
   margin:10px 0 18px;
   color:var(--dark);
   font-size:1.4rem;
 }
 
+/* Grille de cartes */
 .grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:18px;
   margin-bottom:26px;
 }
+
 .card{
   background:#fff;
   padding:18px;
@@ -120,6 +158,7 @@ nav a:hover{opacity:0.9}
   box-shadow:0 8px 22px rgba(26,27,65,0.05);
   text-align:center;
 }
+
 .card img{
   width:110px;
   height:110px;
@@ -127,8 +166,18 @@ nav a:hover{opacity:0.9}
   border-radius:10px;
   margin-bottom:12px;
 }
-.card h3{color:var(--dark); margin-bottom:8px;}
-.card p{color:#555; margin-bottom:12px; font-size:0.98rem;}
+
+.card h3{
+  color:var(--dark);
+  margin-bottom:8px;
+}
+
+.card p{
+  color:#555;
+  margin-bottom:12px;
+  font-size:0.98rem;
+}
+
 .card .btn{
   display:inline-block;
   background:var(--primary);
@@ -139,12 +188,14 @@ nav a:hover{opacity:0.9}
   font-weight:700;
 }
 
+/* Tarifs */
 .pricing{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:18px;
   margin:18px 0 40px;
 }
+
 .price{
   background:linear-gradient(180deg, #fff, #faf9ff);
   padding:20px;
@@ -152,9 +203,19 @@ nav a:hover{opacity:0.9}
   box-shadow:0 8px 20px rgba(26,27,65,0.06);
   text-align:center;
 }
-.price h4{color:var(--dark); margin-bottom:8px;}
-.price p{color:#555; margin-bottom:12px; font-weight:600;}
 
+.price h4{
+  color:var(--dark);
+  margin-bottom:8px;
+}
+
+.price p{
+  color:#555;
+  margin-bottom:12px;
+  font-weight:600;
+}
+
+/* Formulaire de contact */
 .form-card{
   background:#fff;
   padding:22px;
@@ -162,8 +223,17 @@ nav a:hover{opacity:0.9}
   box-shadow:0 8px 26px rgba(26,27,65,0.06);
   margin-top:18px;
 }
-.form-card label{display:block; margin-bottom:6px; font-weight:700; color:#333;}
-.form-card input, .form-card select, .form-card textarea{
+
+.form-card label{
+  display:block;
+  margin-bottom:6px;
+  font-weight:700;
+  color:#333;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea{
   width:100%;
   padding:10px 12px;
   margin-bottom:12px;
@@ -171,6 +241,7 @@ nav a:hover{opacity:0.9}
   border-radius:8px;
   font-size:0.98rem;
 }
+
 .form-card button{
   background:var(--dark);
   color:#fff;
@@ -181,6 +252,7 @@ nav a:hover{opacity:0.9}
   cursor:pointer;
 }
 
+/* Footer */
 footer{
   margin-top:40px;
   padding:22px 0;
@@ -189,18 +261,83 @@ footer{
   background: linear-gradient(90deg, var(--dark), rgba(26,27,65,0.9));
 }
 
-.center{text-align:center}
-.small{font-size:0.92rem;color:#666}
+/* Utilitaires */
+.center{text-align:center;}
+.small{font-size:0.92rem;color:#666;}
 
+/* ------- Responsive desktop -> tablette ------- */
 @media (max-width:1000px){
-  .hero{grid-template-columns:1fr 1fr}
-  .grid{grid-template-columns:repeat(2,1fr)}
-  .pricing{grid-template-columns:repeat(2,1fr)}
+  .hero{grid-template-columns:1fr 1fr;}
+  .grid{grid-template-columns:repeat(2,1fr);}
+  .pricing{grid-template-columns:repeat(2,1fr);}
 }
+
+/* ------- Responsive mobile ------- */
 @media (max-width:700px){
-  .hero{grid-template-columns:1fr; gap:14px}
-  .grid{grid-template-columns:1fr}
-  .pricing{grid-template-columns:1fr}
-  header{padding:12px}
-  .site-title h1{font-size:1rem}
+  .hero{grid-template-columns:1fr; gap:14px;}
+  .grid{grid-template-columns:1fr;}
+  .pricing{grid-template-columns:1fr;}
+  header{padding:12px;}
+  .site-title h1{font-size:1rem;}
+}
+
+/* Bouton devis important (tarifs) */
+.btn-devis-important{
+  display:inline-block;
+  margin-top:18px;
+  padding:14px 22px;
+  background:var(--primary);
+  color:#fff;
+  font-weight:700;
+  border-radius:999px;
+  text-decoration:none;
+  box-shadow:0 10px 24px rgba(123,44,191,0.35);
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+}
+
+.btn-devis-important:hover{
+  transform:translateY(-1px);
+  box-shadow:0 12px 28px rgba(123,44,191,0.4);
+}
+
+/* ------- Burger menu ------- */
+.burger{
+  display:none;
+  background:transparent;
+  border:none;
+  color:#fff;
+  font-size:1.8rem;
+  cursor:pointer;
+}
+
+/* Menu normal (ordi) */
+.nav-links{
+  display:flex;
+  align-items:center;
+}
+
+/* Mobile : menu caché + burger visible */
+@media (max-width:700px){
+  .burger{display:block;}
+
+  .nav-links{
+    position:absolute;
+    right:12px;
+    top:60px;
+    background:var(--dark);
+    padding:10px 14px;
+    border-radius:10px;
+    display:none;          /* caché par défaut */
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .nav-links a{
+    margin:0;
+  }
+
+  .nav-links.open{         /* affiché quand on clique */
+    display:flex;
+  }
 }
