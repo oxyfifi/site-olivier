@@ -63,5 +63,15 @@
 <footer>
   <p>© 2025 Olivier Cesari — Dépannage & Formations numériques en Corse</p>
 </footer>
+<script>
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+
+  if (burger && nav) {
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  }
+</script>
 </body>
 </html>
