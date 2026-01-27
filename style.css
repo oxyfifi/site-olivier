@@ -340,4 +340,19 @@ footer{
   .nav-links.open{         /* affiché quand on clique */
     display:flex;
   }
+<<<<<<< HEAD
 }
+=======
+}
+
+.small {
+  font-size: 0.92rem;
+  color: #666;
+}
+
+.price .prix {
+  font-size: 2.5rem !important;  /* ✅ Présent file:9 */
+  color: #7b2cbf !important;
+}
+
+>>>>>>> cddd8fc (Update site)
