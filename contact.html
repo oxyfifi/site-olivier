@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Numérique & Services</title>
+  <meta name="description" content="Contactez-moi pour un dépannage, un projet de site web ou une formation numérique en Corse.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="logo-transparent.webp" alt="Logo" style="height:40px; width:40px; border-radius:12px; object-fit:contain;">
+      <div><div class="brand-name">Numérique &amp; Services</div><div class="brand-sub">Corse · BTS SIO</div></div>
+    </a>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+    <nav class="nav">
+      <a href="index.html">Accueil</a>
+      <a href="depannage.html">Dépannage</a>
+      <a href="site-web.html">Site web</a>
+      <a href="formations.html">Formations</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <span class="badge">Contact</span>
+      <h1>Parlons de votre besoin</h1>
+      <p>Pour un dépannage, un projet de site ou une formation. Je réponds rapidement avec un devis adapté. Devis gratuit.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-layout">
+      <div class="form-card">
+        <h2>Formulaire de contact</h2>
+        <form>
+          <div class="form-row2">
+            <div class="form-group">
+              <label for="nom">Nom</label>
+              <input id="nom" type="text" placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="Votre email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Type de demande</label>
+            <select id="service" name="service">
+              <option value="">Choisir une prestation</option>
+              <option value="Dépannage informatique">Dépannage informatique</option>
+              <option value="Création de site web">Création de site web</option>
+              <option value="Formation / atelier">Formation / atelier</option>
+              <option value="Autre demande">Autre demande</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Décrivez votre besoin, votre activité ou le problème rencontré..."></textarea>
+          </div>
+          <button class="btn" type="submit" style="width:100%; justify-content:center;">Envoyer la demande →</button>
+        </form>
+      </div>
+      <aside class="tips-card">
+        <h3>Pour un devis précis</h3>
+        <ul class="tip-list">
+          <li><strong>Dépannage :</strong> type d'appareil, symptôme, urgence</li>
+          <li><strong>Site web :</strong> votre activité, pages souhaitées, objectifs</li>
+          <li><strong>Formation :</strong> public visé, thème, durée souhaitée</li>
+        </ul>
+        <span class="info-pill">✓ Devis gratuit</span>
+        <span class="info-pill">✓ Réponse sous 24h</span>
+      </aside>
+    </div>
+  </section>
+</main>
+<footer><div class="container footer-inner"><p>© 2026 · Numérique &amp; Services · Corse</p><p>Étudiant BTS SIO</p></div></footer>
+<script>
+document.querySelector(".menu-btn").addEventListener("click", function(){
+  document.querySelector(".nav").classList.toggle("open");
+});
+// Préremplissage automatique depuis l'URL
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  const service = params.get("service");
+  const detail = params.get("detail");
+  if(service){
+    const sel = document.getElementById("service");
+    for(let i=0; i<sel.options.length; i++){
+      if(sel.options[i].value === service){ sel.selectedIndex = i; break; }
+    }
+  }
+  if(detail){
+    const ta = document.getElementById("message");
+    ta.value = "Bonjour, je suis intéressé(e) par : " + detail + ".\n\n";
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réparation PC &amp; Création de sites — en Corse</title>
+  <meta name="description" content="Étudiant BTS SIO en Corse : dépannage informatique, création de site web et formations numériques.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="logo-transparent.webp" alt="Logo" style="height:40px; width:40px; border-radius:12px; object-fit:contain;">
+      <div><div class="brand-name">Numérique &amp; Services</div><div class="brand-sub">Corse · BTS SIO</div></div>
+    </a>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+    <nav class="nav">
+      <a class="active" href="index.html">Accueil</a>
+      <a href="depannage.html">Dépannage</a>
+      <a href="site-web.html">Site web</a>
+      <a href="formations.html">Formations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-card">
+        <span class="badge">Étudiant BTS SIO · Corse</span>
+        <h1>Dépannage, site web et formations numériques.</h1>
+        <p>Je propose trois services distincts : réparation informatique, création de sites vitrines pour professionnels, et ateliers de sensibilisation numérique.</p>
+        <div class="btn-row">
+          <a class="btn" href="contact.html">Demander un devis</a>
+          <a class="btn-ghost" href="#services">Voir les services</a>
+        </div>
+      </div>
+      <aside class="hero-aside">
+        <div>
+          <h2>Disponible en Corse</h2>
+          <p>Service local avec des tarifs adaptés aux particuliers et petites entreprises.</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat"><strong>25€</strong><span>Dépannage dès</span></div>
+          <div class="stat"><strong>250€</strong><span>Site vitrine dès</span></div>
+          <div class="stat"><strong>30€</strong><span>Formation dès</span></div>
+          <div class="stat"><strong>Gratuit</strong><span>Devis</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <div class="sec-head">
+        <h2>Trois services distincts</h2>
+        <p>Chaque activité a sa propre page avec ses prestations et ses tarifs.</p>
+      </div>
+      <div class="grid-3">
+        <article class="scard">
+          <span class="scard-tag red">Assistance locale</span>
+          <h3>Dépannage informatique</h3>
+          <p>Réparation, nettoyage et installation pour particuliers et petites structures.</p>
+          <ul class="scard-list">
+            <li>Nettoyage et réparation dès 25€</li>
+            <li>Installation Windows, imprimante, réseau dès 30€</li>
+            <li>Suppression de virus</li>
+          </ul>
+          <div class="scard-btn"><a class="btn" href="depannage.html">Voir le dépannage →</a></div>
+        </article>
+        <article class="scard">
+          <span class="scard-tag green">Présence en ligne</span>
+          <h3>Création de site web</h3>
+          <p>Sites vitrines pour artisans et petites entreprises, modernes et optimisés pour mobile.</p>
+          <ul class="scard-list">
+            <li>Site vitrine sur mesure dès 250€</li>
+            <li>Compatible mobile</li>
+            <li>Code propre et base SEO</li>
+          </ul>
+          <div class="scard-btn"><a class="btn" href="site-web.html">Voir l'offre web →</a></div>
+        </article>
+        <article class="scard">
+          <span class="scard-tag amber">Sensibilisation</span>
+          <h3>Formations numériques</h3>
+          <p>Ateliers hygiène numérique, cybersécurité et bonnes pratiques pour particuliers ou entreprises.</p>
+          <ul class="scard-list">
+            <li>Hygiène numérique dès 30€</li>
+            <li>Cyberattaques 50–70€</li>
+            <li>Ateliers entreprises sur devis</li>
+          </ul>
+          <div class="scard-btn"><a class="btn" href="formations.html">Voir les formations →</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container cta-band">
+      <div>
+        <h2>Un besoin ou un projet ?</h2>
+        <p>Décrivez votre demande pour recevoir un devis rapide et adapté.</p>
+      </div>
+      <a class="btn-white" href="contact.html">Prendre contact →</a>
+    </div>
+  </section>
+</main>
+<footer><div class="container footer-inner"><p>© 2026 · Numérique &amp; Services · Corse</p><p>Étudiant BTS SIO</p></div></footer>
+<script>document.querySelector(".menu-btn").addEventListener("click",function(){document.querySelector(".nav").classList.toggle("open");});</script>
+</body>
+</html>
