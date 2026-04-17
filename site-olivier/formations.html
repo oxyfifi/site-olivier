@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Olivier Informatique - Dépannage PC & Formations (Corse)</title>
+  
+  <!-- SEO de base -->
+  <meta name="description" content="Dépannage informatique à domicile, réparation PC, création sites web et formations sécurité en Corse (Ajaccio, Bastia). Étudiant BTS SIO.">
+  <meta name="keywords" content="dépannage informatique Corse, réparation ordinateur Ajaccio, formation sécurité Bastia, création site web Corse">
+  <meta name="robots" content="index,follow">
+  <meta name="author" content="Olivier - novait.fr">
+  
+  <!-- Google Search Console : colle la balise ici après vérif -->
+  <!-- <meta name="google-site-verification" content="TA_CODE_GSC"> -->
+  
+  <!-- Open Graph pour partages réseaux -->
+  <meta property="og:title" content="novait.fr - Dépannage Informatique & Formations Corse">
+  <meta property="og:description" content="Réparation PC, sites web et formations sécurité en Corse.">
+  <meta property="og:image" content="https://novait.fr/images/Logo/logo-transparent-png.png">
+  <meta property="og:url" content="https://novait.fr/">
+  <meta property="og:type" content="website">
+  
+  <link rel="icon" href="/images/Logo/logo-transparent-png.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+  <div class="header-inner">
+    <div class="site-title">
+      <img src="images/Logo/logo-transparent.png" alt="NovaIT">
+      <h1>NovaIT – Réparation & Web</h1>
+    </div>
+
+    <button class="burger" aria-label="Ouvrir le menu">
+      ☰
+    </button>
+
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="formations.html">Formations</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2 class="section-title">Formations & Ateliers</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="images/hygiene.png" alt="Hygiène numérique">
+      <h3>Hygiène numérique (Débutant)</h3>
+      <p>Durée : 45 minutes — Tarif : 30€/personne</p>
+      <p class="small">Bases : mots de passe, phishing, sauvegarde, sécuriser son téléphone.</p>
+      <a class="btn" href="contact.html">Réserver</a>
+    </div>
+
+    <div class="card">
+      <img src="images/cyber.png" alt="Cybersécurité">
+      <h3>Se protéger des cyberattaques (Intermédiaire)</h3>
+      <p>Durée : 1h30 — Tarif : 50-70€/personne</p>
+      <p class="small">Détection d'arnaques, sécurisation navigateur, gestion des comptes.</p>
+      <a class="btn" href="contact.html">Réserver</a>
+    </div>
+
+    <div class="card">
+      <img src="images/entreprise.png" alt="Formation entreprise">
+      <h3>Ateliers pour entreprises</h3>
+      <p>Pack : ateliers de 30-90 min — Tarif : sur devis</p>
+      <p class="small">Anti-phishing, politique mots de passe, bonnes pratiques internes.</p>
+      <a class="btn" href="contact.html">Demander un devis</a>
+    </div>
+
+    <div class="card">
+      <img src="images/doseblanc.jpg" alt="Atteliers Dose">
+      <h3>Ateliers Lumérique (DOSE)</h3>
+      <p>Pack : ateliers de ~55min — Tarif : 150€ (HT)</p>
+      <p class="small">Ateliers et ressources pédagogiques sans écran pour sensibiliser les jeunes aux usages responsables du numérique et former leur esprit critique face aux dérives du digital.</p>
+      <a class="btn" href="https://www.lumerique.fr/dose">Inscription</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Olivier Cesari — Dépannage & Formations numériques en Corse</p>
+</footer>
+<script>
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+
+  if (burger && nav) {
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  }
+</script>
+</body>
+</html>

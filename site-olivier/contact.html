@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Olivier Informatique - Dépannage PC & Formations (Corse)</title>
+  
+  <!-- SEO de base -->
+  <meta name="description" content="Dépannage informatique à domicile, réparation PC, création sites web et formations sécurité en Corse (Ajaccio, Bastia). Étudiant BTS SIO.">
+  <meta name="keywords" content="dépannage informatique Corse, réparation ordinateur Ajaccio, formation sécurité Bastia, création site web Corse">
+  <meta name="robots" content="index,follow">
+  <meta name="author" content="Olivier - novait.fr">
+  
+  <!-- Google Search Console : colle la balise ici après vérif -->
+  <!-- <meta name="google-site-verification" content="TA_CODE_GSC"> -->
+  
+  <!-- Open Graph pour partages réseaux -->
+  <meta property="og:title" content="novait.fr - Dépannage Informatique & Formations Corse">
+  <meta property="og:description" content="Réparation PC, sites web et formations sécurité en Corse.">
+  <meta property="og:image" content="https://novait.fr/images/Logo/logo-transparent-png.png">
+  <meta property="og:url" content="https://novait.fr/">
+  <meta property="og:type" content="website">
+  
+  <link rel="icon" href="/images/Logo/logo-transparent-png.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+  <div class="header-inner">
+    <div class="site-title">
+      <img src="images/Logo/logo-transparent.png" alt="NovaIT">
+      <h1>NovaIT – Réparation & Web</h1>
+    </div>
+
+    <button class="burger" aria-label="Ouvrir le menu">
+      ☰
+    </button>
+
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="formations.html">Formations</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2 class="section-title">Contact & Demande de devis</h2>
+
+  <div class="form-card">
+    <form action="https://formspree.io/f/xwpdojpy" method="POST">
+      <label for="name">Nom / Prénom</label>
+      <input id="name" name="name" type="text" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="phone">Téléphone (optionnel)</label>
+      <input id="phone" name="phone" type="text">
+
+      <label for="service">Type de service / formation</label>
+      <select id="service" name="service" required>
+        <option value="">-- Choisir --</option>
+        <option value="depannage">Dépannage informatique</option>
+        <option value="site">Création site web</option>
+        <option value="formation-hygiene">Formation : Hygiène numérique</option>
+        <option value="formation-cyber">Formation : Cybersécurité</option>
+        <option value="devis-entreprise">Devis entreprise</option>
+      </select>
+
+      <label for="message">Détails / message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2025 Olivier Cesari — Dépannage & Formations numériques en Corse</p>
+</footer>
+<script>
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+
+  if (burger && nav) {
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  }
+</script>
+</body>
+</html>
