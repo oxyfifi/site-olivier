@@ -1,84 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Numérique & Services</title>
-  <meta name="description" content="Contactez-moi pour un dépannage, un projet de site web ou une formation numérique en Corse.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Devis | NovaIT · Création de site web en Corse</title>
+  <meta name="description" content="Contactez NovaIT pour votre projet de création ou refonte de site web en Corse. Devis gratuit et personnalisé sous 24h.">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="logo-transparent.webp">
+  <link rel="icon" type="image/webp" href="logo-transparent.webp">
 </head>
 <body>
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="index.html">
-      <img src="logo-transparent.webp" alt="Logo" style="height:40px; width:40px; border-radius:12px; object-fit:contain;">
-      <div><div class="brand-name">Numérique &amp; Services</div><div class="brand-sub">Corse</div></div>
+      <img src="logo-transparent.webp" alt="NovaIT Logo" style="height:42px; width:42px; border-radius:12px; object-fit:contain;">
+      <div>
+        <div class="brand-name">NovaIT</div>
+        <div class="brand-sub">Création de sites web · Corse</div>
+      </div>
     </a>
     <button class="menu-btn" aria-label="Menu">☰</button>
     <nav class="nav">
       <a href="index.html">Accueil</a>
-      <a href="depannage.html">Dépannage</a>
-      <a href="site-web.html">Site web</a>
-      <a href="formations.html">Formations</a>
-      <a class="active" href="contact.html">Contact</a>
+      <a href="index.html#offres">Offres</a>
+      <a href="index.html#avantages">Pourquoi NovaIT</a>
+      <a href="index.html#process">Méthode</a>
+      <a href="index.html#tarifs">Tarifs</a>
+      <a class="active nav-cta" href="contact.html">Devis gratuit</a>
     </nav>
   </div>
 </header>
 <main>
   <section class="page-hero">
     <div class="container page-hero-inner">
-      <span class="badge">Contact</span>
-      <h1>Parlons de votre besoin</h1>
-      <p>Pour un dépannage, un projet de site ou une formation. Je réponds rapidement avec un devis adapté. Devis gratuit.</p>
+      <span class="badge">Contact &amp; Devis</span>
+      <h1>Parlons de votre projet web</h1>
+      <p>Vous souhaitez créer un site vitrine, moderniser un site existant ou développer votre présence en ligne ? Décrivez votre activité pour recevoir un devis personnalisé, rapide et sans engagement sous 24h.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container contact-layout">
       <div class="form-card">
-        <h2>Formulaire de contact</h2>
-        <form>
+        <h2>Formulaire de contact &amp; devis</h2>
+        <form action="https://formspree.io/f/xwpdojpy" method="POST">
           <div class="form-row2">
             <div class="form-group">
-              <label for="nom">Nom</label>
-              <input id="nom" type="text" placeholder="Votre nom">
+              <label for="nom">Nom complet</label>
+              <input id="nom" type="text" name="nom" placeholder="Votre nom ou entreprise" required>
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
-              <input id="email" type="email" placeholder="Votre email">
+              <label for="email">Adresse email</label>
+              <input id="email" type="email" name="email" placeholder="votre.email@exemple.fr" required>
             </div>
           </div>
           <div class="form-group">
-            <label for="service">Type de demande</label>
-            <select id="service" name="service">
-              <option value="">Choisir une prestation</option>
-              <option value="Dépannage informatique">Dépannage informatique</option>
-              <option value="Création de site web">Création de site web</option>
-              <option value="Formation / atelier">Formation / atelier</option>
-              <option value="Autre demande">Autre demande</option>
+            <label for="telephone">Téléphone (facultatif)</label>
+            <input id="telephone" type="tel" name="telephone" placeholder="06 00 00 00 00">
+          </div>
+          <div class="form-group">
+            <label for="service">Type de projet</label>
+            <select id="service" name="service" required>
+              <option value="">Choisir un type de projet</option>
+              <option value="Site Vitrine Essentiel">Site Vitrine Essentiel (dès 250€)</option>
+              <option value="Site Vitrine Sur Mesure">Site Vitrine Sur Mesure</option>
+              <option value="Refonte de site web">Refonte de site web existant</option>
+              <option value="Autre projet web">Autre projet web spécifique</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Décrivez votre besoin, votre activité ou le problème rencontré..."></textarea>
+            <label for="message">Description de votre projet</label>
+            <textarea id="message" name="message" placeholder="Décrivez votre entreprise, vos services, le nombre de pages souhaité ou toute référence qui vous plaît..."></textarea>
           </div>
-          <button class="btn" type="submit" style="width:100%; justify-content:center;">Envoyer la demande →</button>
+
+          <!-- Case RGPD obligatoire -->
+          <div class="rgpd-consent">
+            <label>
+              <input type="checkbox" name="rgpd" required>
+              J'accepte que mes données (nom, email, téléphone, message) soient utilisées par
+              Cesari Olivier pour traiter ma demande, conformément à la
+              <a href="/politique-confidentialite.html" target="_blank">politique de confidentialité</a>.
+            </label>
+          </div>
+
+          <button class="btn" type="submit" style="width:100%; justify-content:center;">Envoyer ma demande de devis →</button>
         </form>
       </div>
       <aside class="tips-card">
-        <h3>Pour un devis précis</h3>
+        <h3>Pour un devis rapide &amp; précis</h3>
         <ul class="tip-list">
-          <li><strong>Dépannage :</strong> type d'appareil, symptôme, urgence</li>
-          <li><strong>Site web :</strong> votre activité, pages souhaitées, objectifs</li>
-          <li><strong>Formation :</strong> public visé, thème, durée souhaitée</li>
+          <li><strong>Votre activité :</strong> votre secteur, vos prestations clés et votre cible</li>
+          <li><strong>Vos contenus :</strong> disposez-vous déjà d'un logo, de textes ou de photos ?</li>
+          <li><strong>Vos délais :</strong> date souhaitée pour la mise en ligne de votre site</li>
         </ul>
-        <span class="info-pill">✓ Devis gratuit</span>
-        <span class="info-pill">✓ Réponse sous 24h</span>
+        <span class="info-pill">✓ Devis gratuit sous 24h</span>
+        <span class="info-pill">✓ Sans engagement</span>
+        <span class="info-pill">✓ Interlocuteur en Corse</span>
+        <span class="info-pill">✓ Code 100% propriétaire</span>
       </aside>
     </div>
   </section>
 </main>
-<footer><div class="container footer-inner"><p>© 2026 · Numérique &amp; Services · Corse</p></div></footer>
+<footer>
+  <div class="container footer-inner">
+    <p>© 2026 Cesari Olivier · NovaIT · Corse · SIREN 100 365 444 ·
+      <a href="/mentions-legales.html">Mentions légales</a> ·
+      <a href="/politique-confidentialite.html">Politique de confidentialité</a>
+    </p>
+    <p>Création de sites internet sur mesure</p>
+  </div>
+</footer>
 <script>
 document.querySelector(".menu-btn").addEventListener("click", function(){
   document.querySelector(".nav").classList.toggle("open");
@@ -87,16 +117,14 @@ document.querySelector(".menu-btn").addEventListener("click", function(){
 (function(){
   const params = new URLSearchParams(window.location.search);
   const service = params.get("service");
-  const detail = params.get("detail");
   if(service){
     const sel = document.getElementById("service");
     for(let i=0; i<sel.options.length; i++){
-      if(sel.options[i].value === service){ sel.selectedIndex = i; break; }
+      if(sel.options[i].value.toLowerCase().includes(service.toLowerCase()) || service.toLowerCase().includes(sel.options[i].value.toLowerCase())){
+        sel.selectedIndex = i;
+        break;
+      }
     }
-  }
-  if(detail){
-    const ta = document.getElementById("message");
-    ta.value = "Bonjour, je suis intéressé(e) par : " + detail + ".\n\n";
   }
 })();
 </script>

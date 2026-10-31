@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentions Légales — NovaIT</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --color-bg: #f7f6f2; --color-surface: #f9f8f5; --color-border: #d4d1ca;
+      --color-text: #28251d; --color-text-muted: #7a7974;
+      --color-primary: #01696f; --color-primary-hover: #0c4e54;
+      --font-body: 'Satoshi', sans-serif;
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --space-2: 0.5rem; --space-4: 1rem; --space-6: 1.5rem;
+      --space-8: 2rem; --space-12: 3rem; --space-16: 4rem;
+      --radius-md: 0.5rem; --radius-lg: 0.75rem;
+      --shadow-sm: 0 1px 2px oklch(0.2 0.01 80 / 0.06);
+      --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    [data-theme="dark"] {
+      --color-bg: #171614; --color-surface: #1c1b19; --color-border: #393836;
+      --color-text: #cdccca; --color-text-muted: #797876;
+      --color-primary: #4f98a3; --color-primary-hover: #227f8b;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body { font-family: var(--font-body, sans-serif); font-size: var(--text-base); color: var(--color-text); background: var(--color-bg); line-height: 1.7; transition: background var(--transition), color var(--transition); }
+    a { color: var(--color-primary); text-decoration: none; transition: color var(--transition); }
+    a:hover { color: var(--color-primary-hover); text-decoration: underline; }
+    header { background: var(--color-surface); border-bottom: 1px solid oklch(from var(--color-text) l c h / 0.10); padding: var(--space-4) var(--space-8); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 10; box-shadow: var(--shadow-sm); }
+    .logo { display: flex; align-items: center; gap: var(--space-2); font-weight: 700; font-size: var(--text-sm); color: var(--color-text); text-decoration: none; }
+    .logo svg { color: var(--color-primary); }
+    .theme-toggle { background: none; border: 1px solid var(--color-border); color: var(--color-text-muted); border-radius: var(--radius-md); padding: var(--space-2); cursor: pointer; display: flex; align-items: center; transition: color var(--transition), border-color var(--transition); }
+    .theme-toggle:hover { color: var(--color-text); border-color: var(--color-text); }
+    main { max-width: 720px; margin: var(--space-12) auto; padding: 0 var(--space-6); }
+    .page-title { font-size: var(--text-xl); font-weight: 700; color: var(--color-text); margin-bottom: var(--space-2); line-height: 1.2; }
+    .page-subtitle { font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--space-12); padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-border); }
+    .badge { display: inline-flex; align-items: center; gap: 6px; background: color-mix(in oklch, var(--color-primary) 12%, var(--color-surface)); color: var(--color-primary); font-size: var(--text-xs); font-weight: 600; padding: 4px 10px; border-radius: 999px; margin-bottom: var(--space-6); text-transform: uppercase; letter-spacing: 0.04em; }
+    .section { background: var(--color-surface); border: 1px solid oklch(from var(--color-text) l c h / 0.08); border-radius: var(--radius-lg); padding: var(--space-6); margin-bottom: var(--space-6); box-shadow: var(--shadow-sm); }
+    .section h2 { font-size: var(--text-lg); font-weight: 700; color: var(--color-primary); margin-bottom: var(--space-4); display: flex; align-items: center; gap: var(--space-2); }
+    .info-row { display: flex; gap: var(--space-4); padding: var(--space-2) 0; border-bottom: 1px solid oklch(from var(--color-text) l c h / 0.06); font-size: var(--text-sm); }
+    .info-row:last-child { border-bottom: none; }
+    .info-label { color: var(--color-text-muted); min-width: 200px; font-weight: 500; }
+    .info-value { color: var(--color-text); }
+    p { color: var(--color-text-muted); font-size: var(--text-sm); line-height: 1.7; margin-bottom: var(--space-4); }
+    p:last-child { margin-bottom: 0; }
+    footer { text-align: center; padding: var(--space-12) var(--space-6); font-size: var(--text-xs); color: var(--color-text-muted); border-top: 1px solid var(--color-border); margin-top: var(--space-16); }
+    @media (max-width: 600px) { header { padding: var(--space-4); } main { margin: var(--space-8) auto; padding: 0 var(--space-4); } .info-row { flex-direction: column; gap: 4px; } .info-label { min-width: unset; } }
+  </style>
+</head>
+<body>
+<header>
+  <a href="https://novait.fr" class="logo">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-label="Logo" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="28" rx="6" fill="currentColor"/><text x="14" y="19" text-anchor="middle" font-family="Satoshi,sans-serif" font-weight="700" font-size="12" fill="white">NIT</text></svg>
+    NovaIT
+  </a>
+  <button class="theme-toggle" data-theme-toggle aria-label="Basculer le thème">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+</header>
+<main>
+  <span class="badge">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    Conforme RGPD
+  </span>
+  <h1 class="page-title">Mentions Légales</h1>
+  <p class="page-subtitle">Conformément à la loi n°2004-575 du 21 juin 2004 pour la Confiance dans l'Économie Numérique (LCEN), les informations suivantes sont portées à la connaissance des utilisateurs et visiteurs du site <strong>novait.fr</strong>.</p>
+
+  <div class="section">
+    <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Éditeur du site</h2>
+    <div class="info-row"><span class="info-label">Nom et prénom</span><span class="info-value">Cesari Olivier</span></div>
+    <div class="info-row"><span class="info-label">Statut</span><span class="info-value">Auto-entrepreneur (Entreprise Individuelle)</span></div>
+    <div class="info-row"><span class="info-label">Activité</span><span class="info-value">Création de sites internet &amp; développement web</span></div>
+    <div class="info-row"><span class="info-label">SIREN</span><span class="info-value">100 365 444</span></div>
+    <div class="info-row"><span class="info-label">Email</span><span class="info-value"><a href="mailto:nova.it.corse@gmail.com">nova.it.corse@gmail.com</a></span></div>
+    <div class="info-row"><span class="info-label">Zone d'intervention</span><span class="info-value">Corse</span></div>
+  </div>
+
+  <div class="section">
+    <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>Directeur de la publication</h2>
+    <div class="info-row"><span class="info-label">Responsable</span><span class="info-value">Cesari Olivier</span></div>
+    <div class="info-row"><span class="info-label">Email de contact</span><span class="info-value"><a href="mailto:nova.it.corse@gmail.com">nova.it.corse@gmail.com</a></span></div>
+  </div>
+
+  <div class="section">
+    <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Hébergeur du site</h2>
+    <div class="info-row"><span class="info-label">Hébergeur</span><span class="info-value">GitHub, Inc.</span></div>
+    <div class="info-row"><span class="info-label">Service</span><span class="info-value">GitHub Pages</span></div>
+    <div class="info-row"><span class="info-label">Adresse</span><span class="info-value">88 Colin P. Kelly Jr. St, San Francisco, CA 94107, États-Unis</span></div>
+    <div class="info-row"><span class="info-label">Site web</span><span class="info-value"><a href="https://github.com" target="_blank" rel="noopener noreferrer">https://github.com</a></span></div>
+  </div>
+
+  <div class="section">
+    <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>Propriété intellectuelle</h2>
+    <p>L'ensemble du contenu de ce site (textes, images, logos, graphismes) est la propriété exclusive de Cesari Olivier, sauf mention contraire. Toute reproduction, distribution, modification ou utilisation de ces contenus, sans autorisation préalable écrite, est strictement interdite et constituerait une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la Propriété Intellectuelle.</p>
+  </div>
+
+  <div class="section">
+    <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection des données personnelles (RGPD)</h2>
+    <p>Conformément au Règlement Général sur la Protection des Données (RGPD - UE 2016/679) et à la loi Informatique et Libertés, Cesari Olivier est responsable du traitement des données personnelles collectées sur ce site.</p>
+    <p>Les données collectées via le formulaire de contact (nom, email, téléphone) sont utilisées uniquement pour répondre à vos demandes et ne sont pas transmises à des tiers. Elles sont conservées pour une durée maximale de 3 ans.</p>
+    <p>Vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition concernant vos données. Pour exercer ces droits, contactez : <a href="mailto:nova.it.corse@gmail.com">nova.it.corse@gmail.com</a></p>
+    <p>En cas de réclamation, vous pouvez saisir la <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">CNIL</a>.</p>
+  </div>
+
+  <div class="section">
+    <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Cookies</h2>
+    <p>Ce site est susceptible d'utiliser des cookies techniques nécessaires à son bon fonctionnement. Aucun cookie de traçage ou publicitaire n'est utilisé sans votre consentement préalable, conformément aux recommandations de la CNIL.</p>
+    <p>Vous pouvez à tout moment configurer votre navigateur pour refuser les cookies. Cela peut affecter certaines fonctionnalités du site.</p>
+  </div>
+
+  <div class="section">
+    <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>Limitation de responsabilité</h2>
+    <p>Cesari Olivier s'efforce de fournir des informations exactes et à jour sur ce site. Cependant, il ne peut être tenu responsable des erreurs ou omissions, ni des dommages résultant de l'utilisation des informations présentées.</p>
+    <p>Les liens hypertextes présents sur ce site pointant vers des sites tiers sont fournis à titre indicatif. Cesari Olivier n'est pas responsable du contenu de ces sites externes.</p>
+  </div>
+
+  <div class="section">
+    <h2><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 11 21 7 17 3"/><line x1="21" y1="7" x2="9" y2="7"/><polyline points="7 21 3 17 7 13"/><line x1="3" y1="17" x2="15" y2="17"/></svg>Droit applicable</h2>
+    <p>Les présentes mentions légales sont régies par le droit français. En cas de litige, les tribunaux français seront seuls compétents.</p>
+  </div>
+</main>
+<footer>
+  <p>© 2026 Cesari Olivier — NovaIT • Corse • SIREN 100 365 444</p>
+  <p style="margin-top:0.5rem">Dernière mise à jour : octobre 2026</p>
+</footer>
+<script>
+(function(){
+  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+  let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+  r.setAttribute('data-theme',d);
+  t&&t.addEventListener('click',()=>{
+    d=d==='dark'?'light':'dark';
+    r.setAttribute('data-theme',d);
+    t.innerHTML=d==='dark'
+      ?'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+      :'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  });
+})();
+</script>
+</body>
+</html>
